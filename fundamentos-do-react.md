@@ -33,7 +33,7 @@ import FirstComponent from './components/FirstComponent'
 ```
 
 # JSX
-
+---
 * JSX é como se fosse o HTML do React, aqui vai as tags do html
 * Tudo dentro do **return** é JSX
 * class -> className **padrão**
@@ -43,3 +43,12 @@ import FirstComponent from './components/FirstComponent'
 * JSX pode ter apenas um componente pai.
 * sempre tem que estar envolte de uma div ou tag
 
+
+# Comentarios
+---
+* Dois tipos, um na função e um na parte do JSX.
+```javascript
+//comentario -> função
+{/*comentario*/} -> jsx
+```
+* os comentários não são compartilhados, ou seja, não aparecem no inspect da web
