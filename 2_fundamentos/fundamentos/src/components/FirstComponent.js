@@ -4,7 +4,6 @@
 //Arrow function
 const FirstComponent = () => {
   //explicacao da funcao
-
   return (
     <div>
       {/* Algum comentario */}
