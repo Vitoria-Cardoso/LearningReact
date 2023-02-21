@@ -32,4 +32,14 @@ import FirstComponent from './components/FirstComponent'
 <FirstComponent />
 ```
 
+# JSX
+
+* JSX é como se fosse o HTML do React, aqui vai as tags do html
+* Tudo dentro do **return** é JSX
+* class -> className **padrão**
+```javascript
+<p className="teste">um textinho de teste</p>
+```
+* JSX pode ter apenas um componente pai.
+* sempre tem que estar envolte de uma div ou tag
 
