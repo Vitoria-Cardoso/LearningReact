@@ -120,3 +120,7 @@ const Events = () => {
 
 export default Events
 ```
+
+### Funções no evento
+---
+- Manter as lógicas dos eventos como funções fora do JSX. Para não poluir e não dificultar a leitura do código. 
