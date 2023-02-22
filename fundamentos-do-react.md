@@ -124,3 +124,19 @@ export default Events
 ### Funções no evento
 ---
 - Manter as lógicas dos eventos como funções fora do JSX. Para não poluir e não dificultar a leitura do código. 
+
+### Funções de renderização
+---
+- Podemos colocar JSX fora do return. Para isso criamos uma função e add o jsx dentro, dai chamamos ela dentro do return. Pronto yay; 
+```javascript
+  const renderSomenthing = x => {
+    if (x) {
+      return <h1>Renderizando isso!</h1>
+    } else {
+      return <h1>Também posso renderizar isso!</h1>
+    }
+  }
+  // dentro do jsx 
+  {renderSomenthing(true)}
+  {renderSomenthing(false)}
+```
