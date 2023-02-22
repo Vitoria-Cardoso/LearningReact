@@ -1,5 +1,6 @@
 //Area de arquivo de estilos
 
+import MyComponent from './MyComponent'
 
 //Arrow function
 const FirstComponent = () => {
@@ -9,6 +10,7 @@ const FirstComponent = () => {
       {/* Algum comentario */}
       <h1>Meu primeiro componente yay \0/</h1>
       <p className="marmelada">um textinho de teste</p>
+      <MyComponent />
     </div>
   )
 }

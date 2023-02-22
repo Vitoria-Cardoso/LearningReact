@@ -83,3 +83,40 @@ const TemplateExpressions = () => {
   )
 }
 ```
+
+# Hierarquia de componentes
+
+---
+
+- Um componente pode ser usado em outros componentes
+- Gerando assim uma hierarquia, por exemplo:
+  app.js -> FirstComponent -> MyComponent.
+
+# Eventos
+
+---
+
+### Evento de Click
+
+- onClick, podemos colocar diretamente no JSX
+- **Padrão de Nomenclatura**: handleAlgumaCoisa
+- Exemplo de evento:
+
+```javascript
+const Events = () => {
+  const handleMyEvent = e => {
+    console.log(e)
+    console.log('Ativou o evento!')
+  }
+
+  return (
+    <div>
+      <div>
+        <button onClick={handleMyEvent}>Clique aqui!</button>
+      </div>
+    </div>
+  )
+}
+
+export default Events
+```
