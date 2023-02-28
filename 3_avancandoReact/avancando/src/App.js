@@ -1,6 +1,7 @@
 import './App.css'
 // Importanto imagem do assets 
 import City from  './assets/img2.jpg'
+import ManageData from './components/ManageData'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <div>
         <img src={City} alt="Cidade" />
       </div>
+      <ManageData />
     </div>
   )
 }
