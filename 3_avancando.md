@@ -17,7 +17,7 @@
 - Precisam ser importados
 - Serve para gerenciar estados de dados.
 
-# useState Hooker
+# useState Hooks
 
 ---
 
@@ -28,4 +28,20 @@
 import { useState } from 'react'
 const [number, setNumber] = useState(15)
 <button onClick={() => setNumber(20)}>Mudar Variável</button>
+```
+
+# useState para listas
+---
+- ele renderiza a lista e atualiza ela
+
+```javascript
+//fora do return
+const [list] = useState(['Matheus ', 'Pedro', 'Josias', 'Maria'])
+//dentro do return
+<ul>
+  {list.map(item => (
+    /* Como retorno objeto, temos que usar o parenteses e não chaves */
+    <li>{item}</li>
+  ))}
+</ul>
 ```

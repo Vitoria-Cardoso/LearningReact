@@ -1,8 +1,8 @@
 import './App.css'
-// Importanto imagem do assets 
-import City from  './assets/img2.jpg'
+// Importanto imagem do assets
+import City from './assets/img2.jpg'
+import ListRender from './components/ListRender'
 import ManageData from './components/ManageData'
-
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <img src={City} alt="Cidade" />
       </div>
       <ManageData />
+      <ListRender />
     </div>
   )
 }
