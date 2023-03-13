@@ -31,7 +31,9 @@ const [number, setNumber] = useState(15)
 ```
 
 # useState para listas
+
 ---
+
 - ele renderiza a lista e atualiza ela
 
 ```javascript
@@ -39,9 +41,11 @@ const [number, setNumber] = useState(15)
 const [list] = useState(['Matheus ', 'Pedro', 'Josias', 'Maria'])
 //dentro do return
 <ul>
-  {list.map(item => (
+  {list.map((item, i )=> (
     /* Como retorno objeto, temos que usar o parenteses e não chaves */
-    <li>{item}</li>
+    <li key={i}>{item}</li>
   ))}
 </ul>
 ```
+
+- A chave key tambem eh necessaria para nao dar erro no console.
